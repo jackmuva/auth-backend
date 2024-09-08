@@ -1,4 +1,4 @@
-package com.jackmu.slackintegratedbackend.security;
+package com.jackmu.slackintegratedbackend.model.security;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

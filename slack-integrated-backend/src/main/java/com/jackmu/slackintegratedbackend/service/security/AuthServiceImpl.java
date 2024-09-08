@@ -1,4 +1,4 @@
-package com.jackmu.slackintegratedbackend.security;
+package com.jackmu.slackintegratedbackend.service.security;
 
 
 import com.jackmu.slackintegratedbackend.jwt.JwtTokenProvider;

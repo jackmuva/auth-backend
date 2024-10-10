@@ -29,9 +29,6 @@ public class JwtTokenProvider {
         Date currentDate = new Date();
         Date expireDate = new Date(currentDate.getTime() + jwtExpirationDate);
 
-        LOGGER.info("This is the expiration date: " + expireDate.toString());
-
-
         String jwtToken = Jwts.builder()
                 .setSubject(username)
                 .setIssuedAt(new Date())
@@ -44,7 +41,6 @@ public class JwtTokenProvider {
 
     private PrivateKey privateKey(){
         try{
-            LOGGER.info(privateKeyB64);
             byte[] privateKeyDecoded = Base64.getDecoder().decode(privateKeyB64);
             PKCS8EncodedKeySpec spec = new PKCS8EncodedKeySpec(privateKeyDecoded);
             KeyFactory keyFactory = KeyFactory.getInstance("RSA");

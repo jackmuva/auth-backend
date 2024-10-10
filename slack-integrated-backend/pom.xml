@@ -136,6 +136,7 @@
                 </configuration>
             </plugin>
         </plugins>
+        <finalName>auth-backend</finalName>
     </build>
 
 </project>
